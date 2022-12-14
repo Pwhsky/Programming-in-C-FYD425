@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
-
+using namespace std;
 // Function to count the number of occurrences of the pattern in a fed string
-int count_occurrences(const std::string& str, const std::string& pattern)
+
+int count_occurrences(const string& str, const string& pattern)
 {
     int count = 0;
     // Loop through the string and check for the pattern
@@ -17,23 +18,23 @@ int count_occurrences(const std::string& str, const std::string& pattern)
 int main()
 {
     // Input string and pattern
-    std::cout<<"Input string: \n";
-    char sentence;
-    std::cin>>sentence;
+    cout<<"Input string: \n";
+    string sentence;
+    cin>>sentence;
 
-    std::cout<<"Input pattern: \n";
-    char pattern;
-    std::cin>>pattern;
+    cout<<"Input pattern: \n";
+    string pattern;
+    cin>>pattern;
 
 
     // Call the function to count the occurrences of the pattern in the string
     int count = count_occurrences(sentence, pattern);
 
-    std::cout << "The pattern '" << pattern << "' occurs " << count << " times in the string." << std::endl;
+    cout << "The pattern '" << pattern << "' occurs " << count << " times in the string." <<endl;
 
 
-std::cout << "\n";
-std::cout<<"\n";
+cout << "\n";
+cout<<"\n";
 system("pause");
     return 0;
 }
